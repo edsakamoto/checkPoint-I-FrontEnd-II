@@ -1,22 +1,34 @@
-let postagemReference = document.querySelector('.container')
-let tituloReference = document.querySelector('#titulo')
-let descricaoReference = document.querySelector('descricao')
-let imagemReference=document.querySelector('#imagem')
+//obtendo as informaçoes do html
+let addBtn = document.querySelector('#addBtn');
+let tituloRef = document.querySelector('#tituloForm');
+let descricaoRef = document.querySelector('#descricaoForm');
+let imgRef = document.querySelector('#imagemForm');
 
-const postagem = [
-    {imagem: '123',
-    titulo: 'Titulo Exemplo',
-    descricao: 'Descrição Exemplo'
-}
-];
+//banco de dados
+const postagem = [{
+    titulo:'b',
+    descricao:'b',
+    img:''
+}];
 
-for( let posts of postagem){
-    postagemReference.innerHTML += `
-    <div class="item">
-    <img src="${posts.imagem}">
-    <h3>${posts.titulo}</h3>
-    <p>${posts.descricao}</p>
+//postar o coneudo do usuario
+addBtn.addEventListener('click',function(event){
+    event.preventDefault()
+    //dados enviado pelo usuario
+    var tituloInput = tituloRef.value
+    var descricaoInput = descricaoRef.value
+    var imgInput = imgRef.value
+
+    //mandando os dados para banco de dados
+    postagem.push({titulo:tituloInput, descricao:descricaoInput, img:imgInput})
+
+    //rodando o banco de dados para adicionar os conteudos ali presente
+    for(let post of postagem){
+        document.querySelector('.container').innerHTML +=`
+        <div class="item">
+        <img src="${post.img}">
+        <h3>${post.titulo}</h3>
+        <p>${post.descricao}</p>
     </div>`
-};
-
-console.log(tituloReference.value)
+    }
+});
