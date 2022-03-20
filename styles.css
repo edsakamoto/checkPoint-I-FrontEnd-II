@@ -1,17 +1,53 @@
 *{
     margin: 0;
     padding: 0;
+    border: 0;
     font-size: 14;
 }
 
 body{
-    background-color: #050505;
+    background-color: black;
     color: white;
+}
+
+header form{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 2vh;
+    margin: 2vw 2vw;
+    border-radius: 2%
+}
+
+.formInfo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3vh;
+}
+
+#addBtn{
+    width: 8vw;
+    height: 4vh; 
+    position: relative;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.addBtn{
+    text-align: center;
+}
+
+#tituloForm, #descricaoForm, #imagemForm{
+    width: 30vw;
+    height: 3vh;
+    border-radius: 5%;
+    border: 0;
 }
 
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
 }
 
 .item{
@@ -19,4 +55,24 @@ body{
     width: 30vw;
     display: flex;
     flex-direction: column;
+    margin: 1vw;
+    border-radius: 5%;
+    text-align: center;
 }
+
+div h3, div p{
+    padding: 1vw;
+}
+
+h2{
+    text-align: center;
+    padding: 2vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 1vw;
+}
+
+h1{
+    text-align: center;
+    padding: 1vh;
+}
+

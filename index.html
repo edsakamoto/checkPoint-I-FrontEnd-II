@@ -10,25 +10,31 @@
 </head>
 
 <body>
-    <div>
-        <h1>Checkpoint I</h1>
+    <header>
+        <h1>artGalery</h1>
         <form>
-            <fieldset>
-                <input type="text" placeholder="Título" id="tituloForm">
-                <input type="text" placeholder="Descrição" id="descricaoForm">
-                <input type="text" placeholder="URL da Imagem" id="imagemForm">
+            <fieldset class="formBox">
+                <div class="formInfo">
+                    <input type="text" placeholder="Título" id="tituloForm" />
+                    <input type="text" placeholder="Descrição" id="descricaoForm" />
+                    <input type="text" placeholder="URL da Imagem" id="imagemForm" />
+                </div>
+                <div class="addBtn"><button type="submit" id="addBtn" required>Postar</button></div>
 
-                <button type="submit" id="addBtn">Postar</button>
             </fieldset>
         </form>
-    </div>
+    </header>
 
-    <h2>Postagens</h2>
+    <h2>Catalogo</h2>
     <div class="container" id="mainContainer">
         <div class="item">
-            <img src="">
-            <h3>a</h3>
-            <p>a</p>
+            <h3>Rick & Morty</h3>
+            <img src="https://wallpapercave.com/wp/wp1822727.jpg">
+            <p>Rick and Morty é uma comédia de ficção científica de animação adulta americana criada por Justin Roiland
+                e Dan Harmon.
+                A série segue as desventuras do cientista louco cínico Rick Sanchez e seu neto de bom coração, mas
+                inquieto, Morty Smith,
+                que dividem seu tempo entre a vida doméstica e aventuras interdimensionais.</p>
         </div>
     </div>
 
