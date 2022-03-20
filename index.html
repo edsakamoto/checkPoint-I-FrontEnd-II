@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Document</title>
+    <title>Lista de desejos</title>
 </head>
-<body>
-    <div>
+<body> 
+    <div class="cadastro_header">
         <h1>Checkpoint I</h1>
+    </div>   
+    <div class="container_cadastro">
+       
         <form>
             <fieldset>
-                <input type="text" placeholder="Título" id="titulo">
-                <input type="text" placeholder="Descrição" id="descricao">
-                <input type="text" placeholder="URL da Imagem" id="imagem">
+                <input type="text" onfocus="this.value=''" placeholder="Título" id="titulo">
+                <input type="text" onfocus="this.value=''" placeholder="Descrição" id="descricao">
+                <input type="text" onfocus="this.value=''" placeholder="URL da Imagem" id="imagem">
             </fieldset>
         </form>
-        <button type="submit" id="postar">Postar</button>
+
+        <button type="submit" id="cadastrar">Cadastrar</button>
     </div>
+
     <h2>Postagens</h2>
-    <div class="container" id="mainContainer">
+
+    <!-- <div class="hr"></div> -->
+
+    <div class="container" id="couteudoPrincipal">
 
     </div>
 
