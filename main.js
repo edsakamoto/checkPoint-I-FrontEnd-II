@@ -3,6 +3,7 @@ let addBtn = document.querySelector('#addBtn');
 let tituloRef = document.querySelector('#tituloForm');
 let descricaoRef = document.querySelector('#descricaoForm');
 let imgRef = document.querySelector('#imagemForm');
+let itemReference = document.querySelector('.item')
 
 //banco de dados
 let postagem = [];
@@ -21,8 +22,8 @@ function postarPostagem() {
     if (postagem.length == 0) {
         document.querySelector('.container').innerHTML += `
         <div class="item">
-        <img src="${postagem[0].img}">
         <h3>${postagem[0].titulo}</h3>
+        <img src="${postagem[0].img}">
         <p>${postagem[0].descricao}</p>
     </div>`
     }
@@ -30,8 +31,8 @@ function postarPostagem() {
         let ultimaPostagem = postagem[postagem.length - 1]
         document.querySelector('.container').innerHTML += `
         <div class="item">
-        <img src="${ultimaPostagem.img}">
         <h3>${ultimaPostagem.titulo}</h3>
+        <img src="${ultimaPostagem.img}">
         <p>${ultimaPostagem.descricao}</p>
     </div>`
     }
@@ -45,3 +46,13 @@ addBtn.addEventListener('click', function (event) {
 
     postarPostagem()
 });
+
+itemReference.addEventListener('click',function(event){
+    event.preventDefault()
+
+    
+})
+
+
+
+window.onload()

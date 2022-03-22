@@ -1,0 +1,16 @@
+#addBtn:hover{
+    font-weight: 1000;
+}
+
+#addBtn:active{
+    transform: scale(1.02);
+}
+
+.item:hover{
+    transform: scale(1.02);
+}
+
+#tituloForm:hover, #descricaoForm:hover, #imagemForm:hover{
+    transform: scale(1.01);
+    box-shadow: 10px;
+}
